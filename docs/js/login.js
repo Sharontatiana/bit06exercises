@@ -1,17 +1,17 @@
 'use strict';
-// CONSTANTES Y VARIABLES
+// Consonates y variables
 const $form = document.getElementById('form');
 const $legend = document.getElementsByTagName('legend')[0];
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 
-// OBJECTOS
+// objetos
 const formulario = {
   username: null,
   password: null,
   accept: null,
 };
 
-// FUNCIONES
+// funciones
 const alert = (message, type) => {
   const wrapper = document.createElement('div');
   wrapper.innerHTML = [
@@ -32,8 +32,8 @@ function checkFormulario() {
 function checkPermitido(obj) {
   try {
     const permitido = {
-      username: 'pepita',
-      password: 123,
+      username: 'sharon',
+      password: 1234,
       accept: true,
     };
     if (
@@ -41,7 +41,7 @@ function checkPermitido(obj) {
       parseInt(obj.password) === permitido.password &&
       obj.accept === permitido.accept
     ) {
-      window.open('http://127.0.0.1:5500/05examples/exercises.html', '_self');
+      window.open('exe.html', '_self');
     } else {
       alert(
         'Acceso denegado, usuario no permitido, revisa tus credenciales.',
@@ -53,7 +53,7 @@ function checkPermitido(obj) {
   }
 }
 
-// EVENTOS
+// Eventos
 $form.username.addEventListener('input', (e) => {
   formulario.username = e.target.value;
 });
