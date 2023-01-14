@@ -1,3 +1,6 @@
+/*Importar fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,5 +11,40 @@ body {
   background: #222;
   color: #fff;
 }
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: 2px solid #26013b;
+  box-shadow: -6px 5px 20px 20px rgba(94, 53, 212, 0.68);
+  -webkit-box-shadow: -6px 5px 20px 20px rgba(94, 53, 212, 0.68);
+  -moz-box-shadow: -6px 5px 20px 20px rgba(94, 53, 212, 0.68);
+}
+
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.form-control {
+  background: transparent;
+  border-bottom: 2px solid #3b0864;
+  color: rgb(255, 255, 255);
+  outline: none;
+  line-height: 45px;
+  padding: 0 10px;
+  transition: all 1s;
+}
+
+.form-check-input:checked {
+  background-color: #550bbf;
+  border-color: #550bbf;
+}
+
+
+
 
 

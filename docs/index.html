@@ -18,19 +18,19 @@
     <form id="form">
       <fieldset>
         <legend class="fs-6">
-          Todos los campos <span class="text-danger">*</span> son obligatorios.
+          Todos los campos son obligatorios.<span class="text-danger">*</span>
         </legend>
         <div id="liveAlertPlaceholder"></div>
         <div class="mb-3">
           <label for="username" class="form-label"
-            >Nombre de usuario<span class="text-danger">*</span></label
-          >
+            >Nombre de usuario<span class="text-danger">*</span></label>
           <input
             type="text"
             class="form-control"
             id="username"
             name="username"
             aria-describedby="usernameHelp"
+            placeholder="Usuario"
           />
         </div>
         <div class="mb-3">
@@ -42,6 +42,7 @@
             class="form-control"
             id="password"
             name="password"
+            placeholder="Contraseña"
           />
         </div>
         <div class="mb-3 form-check">
@@ -52,7 +53,7 @@
             name="accept"
           />
           <label class="form-check-label" for="accept"
-            >Acepto condiciones<span class="text-danger">*</span></label
+            >Acepto terminos y condiciones<span class="text-danger">*</span></label
           >
         </div>
         <button type="submit" class="btn btn-primary">Iniciar sesión</button>
