@@ -32,8 +32,8 @@ function checkFormulario() {
 function checkPermitido(obj) {
   try {
     const permitido = {
-      username: 'sharon',
-      password: 1234,
+      username: 'bit',
+      password: 2023,
       accept: true,
     };
     if (
