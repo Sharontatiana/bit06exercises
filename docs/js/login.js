@@ -1,7 +1,7 @@
-'use strict';
-const $form = document.getElementById('form');
-const $legend = document.getElementsByTagName('legend')[0];
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+"use strict";
+const $form = document.getElementById("form");
+const $legend = document.getElementsByTagName("legend")[0];
+const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
 const formulario = {
   username: null,
@@ -10,13 +10,13 @@ const formulario = {
 };
 
 const alert = (message, type) => {
-  const wrapper = document.createElement('div');
+  const wrapper = document.createElement("div");
   wrapper.innerHTML = [
     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
     `   <div>${message}</div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>',
-  ].join('');
+    "</div>",
+  ].join("");
   alertPlaceholder.append(wrapper);
 };
 
@@ -29,7 +29,7 @@ function checkFormulario() {
 function checkPermitido(obj) {
   try {
     const permitido = {
-      username: 'bit',
+      username: "bit",
       password: 2023,
       accept: true,
     };
@@ -38,38 +38,36 @@ function checkPermitido(obj) {
       parseInt(obj.password) === permitido.password &&
       obj.accept === permitido.accept
     ) {
-      window.open('exe.html', '_self');
+      window.open("general.html", "_self");
     } else {
       alert(
-        'Acceso denegado, usuario no permitido, revisa tus datos.',
-        'warning'
+        "Acceso denegado, usuario no permitido, revisa tus datos.",
+        "warning"
       );
     }
   } catch (error) {
-    console.log('se produjo un error en la función checkPermitido:', error);
+    console.log("se produjo un error en la función checkPermitido:", error);
   }
 }
 
-$form.username.addEventListener('input', (e) => {
+$form.username.addEventListener("input", (e) => {
   formulario.username = e.target.value;
 });
 
-$form.password.addEventListener('input', (e) => {
+$form.password.addEventListener("input", (e) => {
   formulario.password = e.target.value;
 });
 
-$form.accept.addEventListener('change', (e) => {
+$form.accept.addEventListener("change", (e) => {
   formulario.accept = e.target.checked;
 });
 
-$form.addEventListener('submit', (e) => {
+$form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (checkFormulario() === true) {
     checkPermitido(formulario);
   } else {
-    $legend.classList.add('text-danger');
-    alert('Todos los campos son obligatorios.', 'danger');
+    $legend.classList.add("text-danger");
+    alert("Todos los campos son obligatorios.", "danger");
   }
 });
-
-
