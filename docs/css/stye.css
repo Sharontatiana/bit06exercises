@@ -8,43 +8,54 @@
 }
 
 body {
-  background: #222;
-  color: #fff;
+  background-image: url(../img/fondo.jpg);
 }
 
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 25px auto;
-  padding: 10px 40px;
-  border-radius: 10px;
-  border: 2px solid #26013b;
-  box-shadow: -6px 5px 20px 20px rgba(94, 53, 212, 0.68);
-  -webkit-box-shadow: -6px 5px 20px 20px rgba(94, 53, 212, 0.68);
-  -moz-box-shadow: -6px 5px 20px 20px rgba(94, 53, 212, 0.68);
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.container h1 {
+#liveAlertPlaceholder {
+  background-color: transparent;
+}
+.user_card {
+  height: 470px;
+  width: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #e1b7ed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.brand_logo_container {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  top: -75px;
+  border-radius: 50%;
+  background-color: #e1b7ed;
+  padding: 10px;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 4px;
 }
-.form-control {
-  background: transparent;
-  border-bottom: 2px solid #3b0864;
-  color: rgb(255, 255, 255);
-  outline: none;
-  line-height: 45px;
-  padding: 0 10px;
-  transition: all 1s;
+.brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.form_container {
+  margin-top: 100px;
 }
 
-.form-check-input:checked {
-  background-color: #550bbf;
-  border-color: #550bbf;
+.btn-login {
+  display: flex;
+  justify-content: center;
 }
-
-
-
-
-

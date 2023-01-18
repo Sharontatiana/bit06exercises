@@ -1,17 +1,14 @@
 'use strict';
-// Consonates y variables
 const $form = document.getElementById('form');
 const $legend = document.getElementsByTagName('legend')[0];
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 
-// objetos
 const formulario = {
   username: null,
   password: null,
   accept: null,
 };
 
-// funciones
 const alert = (message, type) => {
   const wrapper = document.createElement('div');
   wrapper.innerHTML = [
@@ -44,7 +41,7 @@ function checkPermitido(obj) {
       window.open('exe.html', '_self');
     } else {
       alert(
-        'Acceso denegado, usuario no permitido, revisa tus credenciales.',
+        'Acceso denegado, usuario no permitido, revisa tus datos.',
         'warning'
       );
     }
@@ -53,7 +50,6 @@ function checkPermitido(obj) {
   }
 }
 
-// Eventos
 $form.username.addEventListener('input', (e) => {
   formulario.username = e.target.value;
 });
