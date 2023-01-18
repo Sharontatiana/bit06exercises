@@ -38,7 +38,7 @@ function checkPermitido(obj) {
       parseInt(obj.password) === permitido.password &&
       obj.accept === permitido.accept
     ) {
-      window.open("general.html", "_self");
+      window.open("../general.html", "_self");
     } else {
       alert(
         "Acceso denegado, usuario no permitido, revisa tus datos.",
