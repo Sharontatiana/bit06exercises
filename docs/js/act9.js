@@ -1,17 +1,17 @@
 "use strict";
 
-const $exer7 = document.getElementById("exer7");
+const $exer9 = document.getElementById("exer9");
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
-$exer7.addEventListener("submit", (event) => {
+$exer9.addEventListener("submit", (event) => {
   event.preventDefault();
-  mitadTriple();
+  reducido5();
 });
 
-function mitadTriple() {
-  const num1 = parseInt($exer7.numtriple.value);
-  const num2 = num1 / 3;
-  alert(`El valor de  ${num1}  Es  (${num2})`);
+function reducido5() {
+  const num1 = parseInt($exer9.reducido5.value);
+  const num2 = num1 - 5;
+  alert(`El cuadrado de  ${num1}  Es  (${num2})`);
 }
 
 const alert = (message, type) => {

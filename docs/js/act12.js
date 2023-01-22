@@ -1,17 +1,22 @@
 "use strict";
 
-const $exer7 = document.getElementById("exer7");
+const $exer12 = document.getElementById("exer12");
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
-$exer7.addEventListener("submit", (event) => {
+$exer12.addEventListener("submit", (event) => {
   event.preventDefault();
-  mitadTriple();
+  parOImpar();
 });
 
-function mitadTriple() {
-  const num1 = parseInt($exer7.numtriple.value);
-  const num2 = num1 / 3;
-  alert(`El valor de  ${num1}  Es  (${num2})`);
+function parOImpar() {
+  const num1 = parseInt($exer12.num.value);
+  if (num1 === 0) {
+    alert("El numero " + num1 + " es cero.");
+  } else if (num1 % 2 === 0) {
+    alert("El numero " + num1 + " es un número par.");
+  } else {
+    alert("El numero " + num1 + " es un número impar.");
+  }
 }
 
 const alert = (message, type) => {

@@ -1,17 +1,22 @@
 "use strict";
 
-const $exer7 = document.getElementById("exer7");
+const $exer11 = document.getElementById("exer11");
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 
-$exer7.addEventListener("submit", (event) => {
+$exer11.addEventListener("submit", (event) => {
   event.preventDefault();
-  mitadTriple();
+  positivoNegativo();
 });
 
-function mitadTriple() {
-  const num1 = parseInt($exer7.numtriple.value);
-  const num2 = num1 / 3;
-  alert(`El valor de  ${num1}  Es  (${num2})`);
+function positivoNegativo() {
+  const num1 = parseInt($exer11.num.value);
+  if (num1 === 0) {
+    alert("Ingresó el número cero.");
+  } else if (num1 < 0) {
+    alert("Ingresó un número negativo.");
+  } else {
+    alert("Ingresó un número positivo.");
+  }
 }
 
 const alert = (message, type) => {
