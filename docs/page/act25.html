@@ -13,122 +13,42 @@
     <title>Actividad 25</title>
   </head>
   <body>
-    <hr />
-    <!-- ACTIVIDAD 2 -->
-    <h2>2. Pedir dos números, mostrar la suma.</h2>
-    <form id="ejercicio1">
-      <label>
-        Ingresa el primer numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc1num1"
-          placeholder="Ingresa un numero"
-        />
-      </label>
-      <label>
-        ingresa el segundo numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc1num2"
-          placeholder="ingresa un numero"
-        />
-      </label>
-      <button type="submit" class="btn btn-primary">Sumar</button>
-      <label>
-        <input class="input" id="resultado1" placeholder="Resultado" />
-      </label>
-    </form>
-    <hr />
-    <!-- ACTIVIDAD 3 -->
-    <h2>3. Pedir dos números, mostrar la resta.</h2>
-    <form id="ejercicio2">
-      <label>
-        Ingresa el primer numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc2num1"
-          placeholder="Ingresa un numero"
-        />
-      </label>
-      <label>
-        ingresa el segundo numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc2num2"
-          placeholder="ingresa un numero"
-        />
-      </label>
-      <button type="submit" class="btn btn-primary">Restar</button>
-      <label>
-        <input class="input" id="resultado2" placeholder="Resultado" />
-      </label>
-    </form>
-    <hr />
-    <!-- ACTIVIDAD 4 -->
-    <h2>4. Pedir dos números, mostrar la multiplicación.</h2>
-    <form id="ejercicio3">
-      <label>
-        Ingresa el primer numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc3num1"
-          placeholder="Ingresa un numero"
-        />
-      </label>
-      <label>
-        ingresa el segundo numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc3num2"
-          placeholder="ingresa un numero"
-        />
-      </label>
-      <button type="submit" class="btn btn-primary">Multiplicar</button>
-      <label>
-        <input class="input" id="resultado3" placeholder="Resultado" />
-      </label>
-    </form>
-    <hr />
-    <!-- ACTIVIDAD 5 -->
-    <h2>5. Pedir dos números, mostrar la multiplicación.</h2>
-    <form id="ejercicio4">
-      <label>
-        Ingresa el primer numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc4num1"
-          placeholder="Ingresa un numero"
-        />
-      </label>
-      <label>
-        ingresa el segundo numero
-        <input
-          type="text"
-          class="form-control"
-          aria-describedby="nameHelp"
-          name="ejerc4num2"
-          placeholder="ingresa un numero"
-        />
-      </label>
-      <button type="submit" class="btn btn-primary">Dividir</button>
-      <label>
-        <input class="input" id="resultado4" placeholder="Resultado" />
-      </label>
-    </form>
-    <hr />
+    <div class="card text-center">
+      <div class="card-header">Actividad 25</div>
+      <div class="card-body">
+        <div id="liveAlertPlaceholder"></div>
+        <form id="exer25">
+          <div class="mb-3">
+            <label for="num" class="form-label">Escribe un numero</label>
+            <input
+              type="number"
+              class="form-control"
+              id="num"
+              aria-describedby="numberHelp"
+              name="num"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="liveAlertBtn">
+            Resultado
+          </button>
+        </form>
+        <br />
+      </div>
+      <div class="card-footer text-muted">
+        <a
+          href="../exe.html"
+          class="btn btn-secondary active"
+          role="button"
+          aria-pressed="true"
+          >Volver a Home</a
+        >
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/act25.js"></script>
   </body>
 </html>
